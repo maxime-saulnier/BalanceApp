@@ -19,6 +19,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BalanceApp">
         <activity
+            android:name=".settingsActivity.SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
+        <activity
             android:name=".mainActivity.WithingsActivity"
             android:exported="false" />
         <activity

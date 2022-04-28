@@ -48,7 +48,6 @@ class GalleryFragment : Fragment() {
         spinner.adapter =  aa
 
         drawLineChart()
-
         binding.OK.setOnClickListener {
            setData()
         }
@@ -78,6 +77,7 @@ class GalleryFragment : Fragment() {
 
             lineChart!!.axisLeft.isEnabled = true
             lineChart!!.invalidate()
+
 
     }
 

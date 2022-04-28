@@ -22,5 +22,13 @@ class Token {
             val token: String? = prefs.getString("token", "")
             return token
         }
+
+        fun delJWT(context: Context){
+            val edit: SharedPreferences.Editor
+            val prefs: SharedPreferences = context.getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+            edit = prefs.edit()
+            edit.remove("token")
+            edit.commit()
+        }
     }
 }
